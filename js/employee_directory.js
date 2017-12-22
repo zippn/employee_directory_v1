@@ -13,15 +13,13 @@ $j(document).ready(function($) {
         data: options,
         dataType: 'json',
         success: function (data) {
-            //console.log(data);
+            //Initiate vars
             var results = data.results;
             var resultsHTML = '<ul id="list" class="col-12">';
             var modalHTML = '';
             var itemNum = 1;
-            //console.log(results);
 
             results.forEach(function (employee) {
-                console.log(employee);
                 //capitalize name
                 var firstName = employee.name.first.charAt(0).toUpperCase() + employee.name.first.slice(1);
                 var lastName = employee.name.last.charAt(0).toUpperCase() + employee.name.last.slice(1);
@@ -92,7 +90,6 @@ jQuery(function ($) {
                 link.parent().hide();
 
             }
-                console.log(link);
 
         });
         //modal navigation
@@ -138,7 +135,6 @@ jQuery(function ($) {
             if(name.length>0){
 
                 $('.employee').addClass('hide-employee');
-                console.log(name);
                 searchEmployee(name);
 
             }
@@ -156,7 +152,6 @@ jQuery(function ($) {
 
                //match name or user name
                if(title.toLowerCase().indexOf(name.toLowerCase())>-1||user.toLowerCase().indexOf(name.toLowerCase())>-1){
-                   console.log(title);
                    $('#modal-item-'+id).removeClass('hide-employee') ;
                    $(this).parent().removeClass('hide-employee');
                    $('#employee-search input').val("");

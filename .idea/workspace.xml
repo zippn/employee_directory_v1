@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3409474b-4ffe-46a4-a997-49d0eda66787" name="Default" comment="" />
+    <list default="true" id="3409474b-4ffe-46a4-a997-49d0eda66787" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/employee_directory.js" afterPath="$PROJECT_DIR$/js/employee_directory.js" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -41,8 +43,8 @@
       <file leaf-file-name="employee_directory.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/employee_directory.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="125" column="28" lean-forward="false" selection-start-line="125" selection-start-column="28" selection-end-line="125" selection-end-column="28" />
+            <state relative-caret-position="628">
+              <caret line="154" column="0" lean-forward="false" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -199,12 +201,12 @@
       <updated>1513801788204</updated>
       <workItem from="1513801789398" duration="357000" />
       <workItem from="1513802340850" duration="5736000" />
-      <workItem from="1513809423629" duration="40712000" />
+      <workItem from="1513809423629" duration="41250000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46805000" />
+    <option name="totallyTimeSpent" value="47343000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -349,8 +351,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/employee_directory.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="125" column="28" lean-forward="false" selection-start-line="125" selection-start-column="28" selection-end-line="125" selection-end-column="28" />
+        <state relative-caret-position="628">
+          <caret line="154" column="0" lean-forward="false" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
           <folding />
         </state>
       </provider>
