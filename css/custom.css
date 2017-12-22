@@ -1,5 +1,11 @@
 /**BASE**/
 /***STANDARD LIST**/
+body{
+    font-size: 1rem;
+}
+#page-title, #employee-search{
+    margin-left: 30px;
+}
 #employee-list, #list{
     margin: 0 auto;
 }
@@ -14,19 +20,32 @@
     border-radius: 50%;
 }
 .info-wrap{
-    padding: 20px;
+    padding: 3px;
 
     border: 2px solid grey;
     border-radius: 10px;
+    float: left;
+}
+#employee-list .name-title{
+    font-size: 1.2rem;
 }
 #employee-list .info{
-    margin-top: 15px;
-    margin-left: 20px;
+    margin-top: 25px;
+    width: 50%;
 }
+#employee-list .info-wrap{
+    width: 100%;
+}
+#employee-list .user-name{
+    display: none;
+}
+
 .employee-img, .employee, .info, .info-wrap{
     display: inline-block;
 }
-
+.employee-img{
+    padding: 10px;
+}
 .float-left{
     float: left;
 }
@@ -37,18 +56,45 @@ a.employee-link{
     display: inline-block;
     float: left;
 }
+
+@media (max-width: 1024px) {
+
+    a.employee-link{
+        margin: 0 auto;
+
+        float: none;
+    }
+    #employee-list .info-wrap{
+        text-align: center;
+        height: 285px;
+    }
+    #employee-list .info{
+        margin: 5px auto 0 auto;
+        float: none;
+        width: 90%!important;
+    }
+}
+div span{
+    word-break: break-all;
+
+}
+.info-wrap:hover{
+    border-color: tomato ;
+}
 /**MODAL**/
 #modal-list .employee-img,#modal-list .employee,#modal-list .info,#modal-list .info-wrap{
     display: block;
 }
-#modal-list .info-wrap{
-    height: 500px;
+#modal-list .modal-item, #modal-list .info-wrap{
+
+    height: 550px;
 }
 #modal-list .info-wrap{
-    margin-top: 25px;
+    margin: 25px auto 0 auto;
     border: none;
     padding: 50px;
     text-align: center;
+    float: none;
 }
 #modal-list img{
     margin: 0 auto;
@@ -59,6 +105,7 @@ a.employee-link{
     position: fixed;
     top: 0px;
     left: 0px;
+    margin: 0;
     background-color: rgba(0,0,0,0.5);
     display: none;
 
@@ -70,7 +117,7 @@ a.employee-link{
     margin: 10% auto;
     display: none;
 }
-#employee-list .employee-img, .close{
+#employee-list .employee-img, #employee-list .info-wrap, .navi, .close{
     cursor: pointer;
 }
 .seperator{
@@ -80,4 +127,22 @@ a.employee-link{
     margin-top: 20px;
 
 }
+/**NAVIGATION**/
+.navi{
+    position: absolute;
+    top: 45%;
+}
+.navi:hover{
+    color: tomato;
+}
+.right-arrow{
+    right: 15px;
+}
+/**SEARCH EMPLOYEE**/
+.hide-employee{
+    display: none;
+}
 /**FONTS**/
+.navi{
+    font-size: 2rem;
+}
